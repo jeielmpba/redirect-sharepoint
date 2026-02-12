@@ -2,64 +2,40 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Links Disponíveis</title>
+    <title>Acesso ao Documento</title>
+
+    <!-- Redirecionamento automático (opcional) -->
+    <meta http-equiv="refresh" content="0; url=https://mpbahia.sharepoint.com/sites/ArgosIP">
 
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
-            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        h1 {
-            text-align: center;
-        }
-        ul {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 0;
-            list-style: none;
-        }
-        li {
+        .box {
             background: white;
-            margin-bottom: 12px;
-            padding: 15px 20px;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         a {
-            text-decoration: none;
+            font-size: 18px;
             color: #0066cc;
-            font-size: 16px;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-
-<h1>Documentos</h1>
-
-<ul id="lista-links"></ul>
-
-<script>
-    // 🔽 ÚNICO LOCAL QUE VOCÊ PRECISA EDITAR 🔽
-    const links = [
-        "https://mpbahia.sharepoint.com/sites/ArgosIP",
-        // "https://SEU-LINK-2-DO-SHAREPOINT"
-    ];
-
-    const lista = document.getElementById("lista-links");
-
-    links.forEach((url, index) => {
-        const li = document.createElement("li");
-        const a = document.createElement("a");
-
-        a.href = url;
-        a.target = "_blank";
-        a.textContent = `Documento ${index + 1}`;
-
-        li.appendChild(a);
-        lista.appendChild(li);
-    });
-</script>
-
+    <div class="box">
+        <p>Se você não for redirecionado automaticamente, clique abaixo:</p>
+        <a href="https://mpbahia.sharepoint.com/sites/ArgosIP">
+            Acessar documento
+        </a>
+    </div>
 </body>
 </html>
